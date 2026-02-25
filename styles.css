@@ -88,10 +88,16 @@ h2 {
     letter-spacing: 2px;
 }
 .hero .date {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 1rem;
     letter-spacing: 5px;
+}
+/* Размер подзаголовка */
+.hero .subtitle {
+    font-size: 1.4rem; /* Задайте нужный размер (1rem = базовый размер шрифта, около 16px) */
+    font-weight: 400;  /* Толщина шрифта (от 300 до 600) */
+    opacity: 0.9;      /* Слегка приглушаем яркость текста для элегантности */
 }
 
 /* Form */
@@ -284,4 +290,5 @@ footer {
     font-size: 0.9rem;
 
 }
+
 
