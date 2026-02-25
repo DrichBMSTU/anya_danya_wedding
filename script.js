@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ВАЖНО: Вставьте сюда URL вашего опубликованного Google Apps Script Web App
+    // ВАЖНО: URL опубликованного Google Apps Script Web App
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx5XcLZs5SKQX8QKjDs4qs0F2SKJoEfe2aBu-pumBuPuwxBaXoEokKHhft419IoF-A/exec';
     
     // --- Логика дедлайна ---
@@ -123,3 +123,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
