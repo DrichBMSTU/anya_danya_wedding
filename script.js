@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ВАЖНО: Вставьте сюда URL вашего опубликованного Google Apps Script Web App
-    const GOOGLE_SCRIPT_URL = 'YOUR_WEB_APP_URL_HERE';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx5XcLZs5SKQX8QKjDs4qs0F2SKJoEfe2aBu-pumBuPuwxBaXoEokKHhft419IoF-A/exec';
     
     // --- Логика дедлайна ---
     // 20.04.2026 23:59 Europe/Moscow (UTC+3)
@@ -121,4 +121,5 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.textContent = 'Отправить ответ';
         }
     });
+
 });
