@@ -70,8 +70,17 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #a4a6b0;
 }
+
+/* Настраиваем для компьютеров */
+@media (min-width: 1024px) {
+    .hero {
+        height: 80vh; /* На ПК занимаем только 80% высоты экрана, чтобы фото меньше увеличивалось */
+        max-height: 700px; /* И не даем расти выше 700px */
+    }
+}
+
 .hero-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -294,6 +303,7 @@ footer {
     font-size: 0.9rem;
 
 }
+
 
 
 
