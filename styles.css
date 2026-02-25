@@ -1,7 +1,7 @@
 :root {
     --bg-main: #f6f1ea;
     --bg-accent: #dbeafe;
-    --text-main: #333333;
+    --text-main: #86877a;
     --text-muted: #555555;
     --radius: 16px;
     --shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
@@ -282,4 +282,5 @@ footer {
     padding: 2rem;
     color: var(--text-muted);
     font-size: 0.9rem;
+
 }
