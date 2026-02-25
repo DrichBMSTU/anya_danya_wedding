@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Даниила и Анны</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Даниил & Анна</h1>
+            <p class="date">02.05.2026</p>
+            <p class="subtitle">Приглашаем вас разделить с нами этот особенный день</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="rsvp" class="section bg-accent fade-in">
+            <div class="container">
+                <h2>Анкета гостя</h2>
+                <p class="text-center">Пожалуйста, подтвердите своё присутствие до 20 апреля 2026 года.</p>
+                
+                <div id="deadline-message" class="deadline-hidden">
+                    Приём ответов завершён. Ждём вас на нашей свадьбе!
+                </div>
+
+                <form id="rsvp-form" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Фамилия и Имя *</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Сможете ли вы прийти? *</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="presence" value="Приду" required> С удовольствием приду</label>
+                            <label><input type="radio" name="presence" value="Не приду"> К сожалению, не смогу</label>
+                        </div>
+                    </div>
+
+                    <div id="extra-fields" class="extra-fields">
+                        <div class="form-group">
+                            <label>Предпочтения по алкоголю (выберите один или несколько) *</label>
+                            <div class="checkbox-grid">
+                                <label><input type="checkbox" name="alcohol" value="Шампанское"> Шампанское</label>
+                                <label><input type="checkbox" name="alcohol" value="Вино красное полусладкое"> Вино красное полусладкое</label>
+                                <label><input type="checkbox" name="alcohol" value="Вино красное сухое"> Вино красное сухое</label>
+                                <label><input type="checkbox" name="alcohol" value="Вино белое полусладкое"> Вино белое полусладкое</label>
+                                <label><input type="checkbox" name="alcohol" value="Вино белое сухое"> Вино белое сухое</label>
+                                <label><input type="checkbox" name="alcohol" value="Коньяк"> Коньяк</label>
+                                <label><input type="checkbox" name="alcohol" value="Виски"> Виски</label>
+                                <label><input type="checkbox" name="alcohol" value="Водка"> Водка</label>
+                                <label><input type="checkbox" name="alcohol" value="Пиво"> Пиво</label>
+                                <label><input type="checkbox" name="alcohol" value="Без алкоголя" class="no-alcohol"> Без алкоголя</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="allergies">Пищевая аллергия или особые предпочтения</label>
+                            <textarea id="allergies" name="allergies" rows="3" placeholder="Например: аллергия на орехи, вегетарианец..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="btn">Отправить ответ</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+
+        <section id="timeline" class="section fade-in">
+            <div class="container">
+                <h2>Программа дня</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time">15:15</div>
+                        <div class="event">Сбор гостей у ЗАГСа</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">15:45</div>
+                        <div class="event">Торжественная регистрация</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">16:00</div>
+                        <div class="event">Фотосессия в ЗАГСе</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">16:30</div>
+                        <div class="event">Трансфер до ресторана</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">17:00</div>
+                        <div class="event">Свадебный банкет</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">23:00</div>
+                        <div class="event">Окончание вечера</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="locations" class="section bg-accent fade-in">
+            <div class="container">
+                <h2>Локации</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <h3>Церемония (ЗАГС)</h3>
+                        <p><strong>Митинский ЗАГС</strong></p>
+                        <p>Дубравная улица, 48А, Москва</p>
+                        <div class="map-container">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.359273%2C55.842792&mode=search&text=Митинский%20ЗАГС%2C%20Дубравная%20улица%2C%2048А&z=16" frameborder="0" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <h3>Банкет</h3>
+                        <p><strong>Ресторан Сорренто</strong></p>
+                        <p>с. Ангелово, ЖК Ангелово-Резиденц, 43</p>
+                        <div class="map-container">
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.332309%2C55.859664&mode=search&text=Ресторан%20Сорренто%2C%20село%20Ангелово%2C%20жилой%20комплекс%20Ангелово-Резиденц%2C%2043&z=16" frameborder="0" allowfullscreen="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section fade-in">
+            <div class="container">
+                <h2>Вопросы и ответы</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4>В каком стиле будет свадьба? Есть ли дресс-код?</h4>
+                        <p>Мы будем рады видеть вас в нарядах пастельных тонов. Девушкам предлагаем отказаться от белого цвета, оставив его для невесты.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Нужно ли дарить цветы?</h4>
+                        <p>Просим вас не дарить цветы, так как мы не успеем насладиться их красотой до отъезда в свадебное путешествие.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Можно ли прийти с детьми?</h4>
+                        <p>Мы любим детей, но планируем формат вечеринки для взрослых, чтобы все родители смогли по-настоящему расслабиться.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Как добраться до ресторана?</h4>
+                        <p>Для всех гостей будет организован комфортный трансфер от ЗАГСа до ресторана.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Кому задать вопрос в день свадьбы?</h4>
+                        <p>По всем организационным вопросам в день свадьбы вы можете обращаться к нашему координатору (контакты появятся ближе к дате).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Пожелания по подаркам</h4>
+                        <p>Не ломайте голову над подарками. Мы будем благодарны вкладу в бюджет нашей молодой семьи (в конвертах).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="section bg-accent fade-in">
+            <div class="container text-center">
+                <h2>Контакты</h2>
+                <p>Если у вас остались вопросы, пишите нам:</p>
+                <div class="contact-links">
+                    <a href="https://t.me/karpuzivert" target="_blank">Telegram Жениха</a>
+                    <a href="https://t.me/fd_lvv" target="_blank">Telegram Невесты</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Александр & Мария. Ждем вас!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
