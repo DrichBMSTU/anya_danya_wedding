@@ -82,6 +82,7 @@ h2 {
         margin: 20px auto; 
         /* Ограничиваем высоту, чтобы она была пропорциональна ширине */
         height: 70vh;
+        min-height: 1000px;
         max-height: 1200px;
         /* Добавляем небольшое скругление, раз мы теперь видим края блока */
         border-radius: var(--radius);
@@ -323,6 +324,7 @@ footer {
     font-size: 0.9rem;
 
 }
+
 
 
 
